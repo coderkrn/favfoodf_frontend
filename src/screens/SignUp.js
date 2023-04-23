@@ -8,7 +8,8 @@ export default function SignUp() {
 
     const handleSubmit = async (e)=>{
       e.preventDefault();
-      const resposne = await fetch("http://localhost:5000/api/createuser",{
+    //   const resposne = await fetch("http://localhost:5000/api/createuser",{
+      const resposne = await fetch("https://favfood.onrender.com/api/createuser",{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -22,7 +23,7 @@ export default function SignUp() {
       })
 
       const json = await resposne.json()
-      console.log(json)
+    //   console.log(json)
 
       if (!json.success) {
         alert("Enter valid credentials")

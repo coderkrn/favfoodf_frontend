@@ -10,7 +10,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem('authToken')
-    navigate('/login')
+    navigate('/')
   }
 
   // let data = useCart()
@@ -28,7 +28,10 @@ export default function Navbar() {
                 <Link className="nav-link active fs-5" aria-current="page" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active fs-5" aria-current="page" to="/http://itskrn.ml/" target='_blank'>About</Link>
+                <Link className="nav-link active fs-5" aria-current="page" to="http://itskrn.ml/" target='_blank'>About</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active fs-5" aria-current="page" to="http://itskrn.ml/#contact" target='_blank'>About</Link>
               </li>
 
               {/* {(localStorage.getItem('authToken')) ?
