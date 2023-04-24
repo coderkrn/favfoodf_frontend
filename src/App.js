@@ -10,6 +10,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 import SignUp from './screens/SignUp';
 import MyOrder from './screens/MyOrder';
+import Navbar from './components/Navbar';
 // import Cart from './screens/Cart';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <>
       <CartProvider>
         <BrowserRouter>
+        <Navbar></Navbar>
           <Routes>
             <Route exact path='/' element={<Home></Home>}></Route>
             <Route exact path='/login' element={<Login></Login>}></Route>

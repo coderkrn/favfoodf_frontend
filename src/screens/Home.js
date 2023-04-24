@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
 
@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
 
       </div>
       <div>
